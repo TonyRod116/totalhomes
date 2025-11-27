@@ -8,7 +8,7 @@ function HeroSection() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setParallaxOffset(window.scrollY * 0.25)
+      setParallaxOffset(window.scrollY * 0.5)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
@@ -17,21 +17,29 @@ function HeroSection() {
   return (
     <section
       id="inicio"
-      className="relative min-h-[65vh] lg:min-h-[70vh] flex items-center pt-32 pb-16"
+      className="relative min-h-[65vh] lg:min-h-[70vh] flex items-center pt-32 pb-16 overflow-hidden"
     >
       <div
         className="absolute inset-0 will-change-transform"
         style={{
-          backgroundImage: `linear-gradient(180deg, rgba(14,20,34,0.35), rgba(14,20,34,0.82)), url(${heroBackground})`,
+          backgroundImage: `url(${heroBackground})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center center',
+          backgroundPosition: 'center 10%',
           transform: `translate3d(0, ${parallaxOffset}px, 0)`,
+          height: '140%',
+          top: '-20%',
+        }}
+      />
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `linear-gradient(180deg, rgba(14,20,34,0.35), rgba(14,20,34,0.82))`,
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-br from-black/25 via-black/5 to-transparent" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white space-y-6">
-        <h1 className="text-[2.5rem] md:text-[3.2rem] font-extrabold leading-tight tracking-tight">
+        <h1 className="text-[2.7777777777778rem] md:text-[2.7777777777778rem] font-[800] leading-[1.4em]">
           Es momento de construir el hogar que siempre has imaginado
         </h1>
         <p className="text-base md:text-lg max-w-3xl mx-auto text-white/85 leading-relaxed">

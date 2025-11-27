@@ -13,10 +13,7 @@ function PainPointsSection() {
     >
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
         <div className="space-y-6">
-          <p className="tracking-[0.5em] text-[0.65rem] uppercase text-slate-400">
-            Total Homes
-          </p>
-          <h2 className="text-[2.4rem] font-bold text-slate-900 leading-snug">
+          <h2 className="text-[1.7777777777778rem] font-[800] text-slate-900 leading-[1.3em]">
             Hacer realidad tu hogar debería ser simple
           </h2>
           <p className="text-base md:text-lg text-slate-600 leading-relaxed">

@@ -14,10 +14,9 @@ function ValuePropsSection() {
           return (
             <div
               key={pillar.title}
-              className="relative p-6 flex flex-col items-center gap-3 text-[0.65rem] uppercase tracking-[0.28em] font-semibold text-slate-900"
+              className="relative p-6 flex flex-col items-center gap-3 text-[0.65rem] tracking-[0.28em] font-semibold text-slate-900"
             >
               <span>{pillar.title}</span>
-              <span className="block w-10 h-[2px] bg-[#c7a948]" />
 
               {!isLast && (
                 <>

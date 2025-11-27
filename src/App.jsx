@@ -1,5 +1,6 @@
 import Footer from './components/Footer'
 import Header from './components/Header'
+import LanguageSelector from './components/LanguageSelector'
 import AboutSection from './sections/AboutSection'
 import GallerySection from './sections/GallerySection'
 import HeroSection from './sections/HeroSection'
@@ -28,6 +29,7 @@ function App() {
         <QualitySection />
       </main>
       <Footer />
+      <LanguageSelector />
     </div>
   )
 }
