@@ -14,7 +14,7 @@ function ValuePropsSection() {
           return (
             <div
               key={pillar.title}
-              className="relative p-6 flex flex-col items-center gap-3 text-[0.65rem] tracking-[0.28em] font-semibold text-slate-900"
+              className="relative p-6 flex flex-col items-center gap-3 text-[0.7rem] tracking-[0.28em] font-normal text-slate-900"
             >
               <span>{pillar.title}</span>
 

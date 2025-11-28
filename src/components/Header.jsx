@@ -16,7 +16,7 @@ function Header() {
         </a>
         <a
           href="https://www.totalhomes.es/contacto/"
-          className="pointer-events-auto bg-[#b79b3c] hover:bg-[#9e8430] text-white uppercase tracking-[0.35em] text-[0.6rem] font-semibold px-8 py-3 shadow-[0_10px_25px_rgba(0,0,0,0.25)] transition-colors"
+          className="pointer-events-auto bg-[#b79b3c] hover:bg-[#9e8430] text-white uppercase tracking-[0.35em] text-[0.75rem] font-normal px-5 py-2 shadow-[0_10px_25px_rgba(0,0,0,0.25)] transition-colors"
         >
           Contactar
         </a>
